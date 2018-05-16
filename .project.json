@@ -15,7 +15,9 @@
             "name": "scattorplot.R"
         },
         {
-            "name": "barchart.R"
+            "name": "barchart_B.R",
+            "task_status": "not started",
+            "assigned_to": "not assigned"
         },
         {
             "name": "barchart.csv"
@@ -36,10 +38,10 @@
         },
         {
             "source": "raw_data.csv",
-            "target": "barchart.R"
+            "target": "barchart_B.R"
         },
         {
-            "source": "barchart.R",
+            "source": "barchart_B.R",
             "target": "barchart.csv"
         }
     ]
