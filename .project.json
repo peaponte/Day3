@@ -31,7 +31,9 @@
             "name": "heatmap.R"
         },
         {
-            "name": "map_of_USA.R"
+            "name": "partE.R",
+            "task_status": "not started",
+            "assigned_to": "not assigned"
         },
         {
             "name": "partG_4483.R"
@@ -71,7 +73,7 @@
         },
         {
             "source": "raw_data.csv",
-            "target": "map_of_USA.R"
+            "target": "partE.R"
         },
         {
             "source": "raw_data.csv",
