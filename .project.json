@@ -26,6 +26,9 @@
         },
         {
             "name": "scatterplot_C.csv"
+        },
+        {
+            "name": "heatmap.R"
         }
     ],
     "edges": [
