@@ -4,12 +4,28 @@
             "name": "raw_data.csv"
         },
         {
-            "name": "data.csv"
+            "name": "boxplot.csv"
         },
         {
             "name": "Part_A.R",
             "task_status": "not started",
             "assigned_to": "not assigned"
+        },
+        {
+            "name": "scattorplot_C.R",
+            "task_status": "not started",
+            "assigned_to": "not assigned"
+        },
+        {
+            "name": "barchart_B.R",
+            "task_status": "not started",
+            "assigned_to": "not assigned"
+        },
+        {
+            "name": "barchart_B.csv"
+        },
+        {
+            "name": "scatterplot_C.csv"
         }
     ],
     "edges": [
@@ -19,7 +35,23 @@
         },
         {
             "source": "Part_A.R",
-            "target": "data.csv"
+            "target": "boxplot.csv"
+        },
+        {
+            "source": "raw_data.csv",
+            "target": "scattorplot_C.R"
+        },
+        {
+            "source": "raw_data.csv",
+            "target": "barchart_B.R"
+        },
+        {
+            "source": "barchart_B.R",
+            "target": "barchart_B.csv"
+        },
+        {
+            "source": "scattorplot_C.R",
+            "target": "scatterplot_C.csv"
         }
     ]
 }
