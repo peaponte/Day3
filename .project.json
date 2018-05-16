@@ -55,6 +55,10 @@
         {
             "source": "scattorplot_C.R",
             "target": "scatterplot_C.csv"
+        },
+        {
+            "source": "raw_data.csv",
+            "target": "heatmap.R"
         }
     ]
 }
