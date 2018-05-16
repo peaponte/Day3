@@ -7,16 +7,18 @@
             "name": "data.csv"
         },
         {
-            "name": "clean.R"
+            "name": "Boxplot_LTR.R",
+            "task_status": "not started",
+            "assigned_to": "not assigned"
         }
     ],
     "edges": [
         {
             "source": "raw_data.csv",
-            "target": "clean.R"
+            "target": "Boxplot_LTR.R"
         },
         {
-            "source": "clean.R",
+            "source": "Boxplot_LTR.R",
             "target": "data.csv"
         }
     ]
