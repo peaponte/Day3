@@ -12,7 +12,9 @@ df <- read.csv('raw_data.csv')
 #Clean Column L2R from Hotel Data
 is.na(df)
 dfClean <- df[!is.na(df$Likelihood_Recommend_H), ]
-dfClean
+#dfClean
+install.packages('ggplot2')
+library(ggplot2)
 
 #Generate Boxplot for LTR
 LTRBoxPlot <- ggplot(dfClean)
