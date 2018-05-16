@@ -13,6 +13,9 @@
         },
         {
             "name": "scattorplot.R"
+        },
+        {
+            "name": "barchart.R"
         }
     ],
     "edges": [
