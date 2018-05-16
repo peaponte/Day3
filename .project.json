@@ -20,7 +20,7 @@
             "assigned_to": "not assigned"
         },
         {
-            "name": "barchart.csv"
+            "name": "barchart_B.csv"
         }
     ],
     "edges": [
@@ -42,7 +42,7 @@
         },
         {
             "source": "barchart_B.R",
-            "target": "barchart.csv"
+            "target": "barchart_B.csv"
         }
     ]
 }
