@@ -30,6 +30,10 @@
         {
             "source": "raw_data.csv",
             "target": "scattorplot.R"
+        },
+        {
+            "source": "raw_data.csv",
+            "target": "barchart.R"
         }
     ]
 }
