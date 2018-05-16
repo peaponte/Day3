@@ -14,8 +14,6 @@ is.na(df)
 dfClean <- df[!is.na(df$Likelihood_Recommend_H), ]
 dfClean
 
-library(ggplot2)
-
 #Generate Boxplot for LTR
 LTRBoxPlot <- ggplot(dfClean)
 LTRBoxPlot <- LTRBoxPlot + aes(x=dfClean$Likelihood_Recommend_H, y=dfClean$Likelihood_Recommend_H)
