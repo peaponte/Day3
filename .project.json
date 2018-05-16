@@ -28,6 +28,12 @@
             "name": "scatterplot_C.csv"
         },
         {
+            "name": "heatmap.R"
+        },
+        {
+            "name": "map_of_USA.R"
+        },
+        {
             "name": "partG_4483.R"
         }
     ],
@@ -55,6 +61,14 @@
         {
             "source": "scattorplot_C.R",
             "target": "scatterplot_C.csv"
+        },
+        {
+            "source": "raw_data.csv",
+            "target": "heatmap.R"
+        },
+        {
+            "source": "raw_data.csv",
+            "target": "map_of_USA.R"
         },
         {
             "source": "raw_data.csv",
