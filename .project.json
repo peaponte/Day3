@@ -37,6 +37,10 @@
         {
             "source": "raw_data.csv",
             "target": "barchart.R"
+        },
+        {
+            "source": "barchart.R",
+            "target": "barchart.csv"
         }
     ]
 }
