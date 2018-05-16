@@ -30,21 +30,25 @@ NPSfunction <- function(df)
   V <- format(round(NPS*100))
   return(V)
 }
-
+State <- names(avg.NPS)
 #Pass LTR Values sorted on Sate to my Funtion which calc NPS
 avg.NPS <- tapply(df$Likelihood_Recommend_H,df$STATE_R,NPSfunction)
 avg.NPS
 
-#dummyDF <- data.frame(avg.NPS)
-#dummyDF$avg.NPS <- avg.NPS
-cbind(dummyDF,avg.NPS)
+newDF <- data.frame(State,avg.NPS)
+
+index<-match(State,state.abb)
+newDF[index,]
+na.omit(newDF)
+cleanDF <- newDF[!is.na(newDF$State), ]
+
 library(ggmap)
 
 dummyDF <- data.frame(state.name, stringsAsFactors=FALSE)
 dummyDF$state <- tolower(dummyDF$state.name)
 us <- map_data("state") 
 
-map.simple <- ggplot(dummyDF, aes(map_id = state))  
+map.simple <- ggplot(dummyDF, aes(map_id = State))  
 map.simple <- map.simple +  
   geom_map(map = us, color="black",fill=avg.NPS) +
   scale_fill_gradient(low="white", high="blue")
