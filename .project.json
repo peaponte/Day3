@@ -26,9 +26,6 @@
         },
         {
             "name": "scatterplot_C.csv"
-        },
-        {
-            "name": "clean.R"
         }
     ],
     "edges": [
