@@ -4,7 +4,7 @@
             "name": "raw_data.csv"
         },
         {
-            "name": "data.csv"
+            "name": "boxplot.csv"
         },
         {
             "name": "Part_A.R",
@@ -25,7 +25,7 @@
         },
         {
             "source": "Part_A.R",
-            "target": "data.csv"
+            "target": "boxplot.csv"
         },
         {
             "source": "raw_data.csv",
