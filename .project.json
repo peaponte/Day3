@@ -62,6 +62,10 @@
         {
             "source": "raw_data.csv",
             "target": "heatmap.R"
+        },
+        {
+            "source": "raw_data.csv",
+            "target": "map_of_USA.R"
         }
     ]
 }
