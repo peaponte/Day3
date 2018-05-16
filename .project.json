@@ -21,6 +21,9 @@
         },
         {
             "name": "barchart_B.csv"
+        },
+        {
+            "name": "scatterplot_C.csv"
         }
     ],
     "edges": [
