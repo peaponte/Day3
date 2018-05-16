@@ -32,12 +32,6 @@
         },
         {
             "name": "map_of_USA.R"
-        },
-        {
-            "name": "partG_4483.R"
-        },
-        {
-            "name": "clean.R"
         }
     ],
     "edges": [
@@ -72,10 +66,6 @@
         {
             "source": "raw_data.csv",
             "target": "map_of_USA.R"
-        },
-        {
-            "source": "raw_data.csv",
-            "target": "partG_4483.R"
         }
     ]
 }
