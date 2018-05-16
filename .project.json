@@ -7,7 +7,7 @@
             "name": "data.csv"
         },
         {
-            "name": "Part_A.R",
+            "name": "Clean.R",
             "task_status": "not started",
             "assigned_to": "not assigned"
         }
@@ -15,10 +15,10 @@
     "edges": [
         {
             "source": "raw_data.csv",
-            "target": "Part_A.R"
+            "target": "Clean.R"
         },
         {
-            "source": "Part_A.R",
+            "source": "Clean.R",
             "target": "data.csv"
         }
     ]
