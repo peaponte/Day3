@@ -23,6 +23,10 @@
         {
             "source": "Part_A.R",
             "target": "data.csv"
+        },
+        {
+            "source": "raw_data.csv",
+            "target": "scattorplot.R"
         }
     ]
 }
