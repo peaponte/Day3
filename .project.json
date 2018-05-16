@@ -10,6 +10,9 @@
             "name": "Part_A.R",
             "task_status": "not started",
             "assigned_to": "not assigned"
+        },
+        {
+            "name": "scattorplot.R"
         }
     ],
     "edges": [
