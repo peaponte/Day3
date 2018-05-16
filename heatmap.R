@@ -9,23 +9,8 @@ df <- read.csv('raw_data.csv')
 ####################################
 
 ## start writing your R code from here
-library(ggmap)
 
-dummyDF <- data.frame(state.name, stringsAsFactors=FALSE)
-dummyDF$state <- tolower(dummyDF$state.name)
-us <- map_data("state") 
-
-map.simple <- ggplot(dummyDF, aes(map_id = state))  
-map.simple <- map.simple +  
-  geom_map(map = us, fill="light blue", color="black") 
-
-map.simple <- map.simple +
-  expand_limits(x = us$long, y = us$lat)
-
-map.simple <- map.simple +
-  coord_map() + ggtitle("Heatmap of the USA")
-map.simple
-
+#NPS Function using only a vector
 NPSfunction <- function(df)
 {
   #Promoters are numbers of 9 or 10
@@ -45,10 +30,32 @@ NPSfunction <- function(df)
   V <- format(round(NPS*100))
   return(V)
 }
-#NPSfunction(dfClean)
 
+#Pass LTR Values sorted on Sate to my Funtion which calc NPS
 avg.NPS <- tapply(df$Likelihood_Recommend_H,df$STATE_R,NPSfunction)
 avg.NPS
+
+#dummyDF <- data.frame(avg.NPS)
+#dummyDF$avg.NPS <- avg.NPS
+cbind(dummyDF,avg.NPS)
+library(ggmap)
+
+dummyDF <- data.frame(state.name, stringsAsFactors=FALSE)
+dummyDF$state <- tolower(dummyDF$state.name)
+us <- map_data("state") 
+
+map.simple <- ggplot(dummyDF, aes(map_id = state))  
+map.simple <- map.simple +  
+  geom_map(map = us, color="black",fill=avg.NPS) +
+  scale_fill_gradient(low="white", high="blue")
+
+map.simple <- map.simple +
+  expand_limits(x = us$long, y = us$lat)
+
+map.simple <- map.simple +
+  coord_map() + ggtitle("Heatmap of the USA") 
+map.simple
+
 ## end your R code and logic 
 
 ####################################
