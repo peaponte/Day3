@@ -46,6 +46,10 @@
         {
             "source": "barchart_B.R",
             "target": "barchart_B.csv"
+        },
+        {
+            "source": "scattorplot.R",
+            "target": "scatterplot_C.csv"
         }
     ]
 }
