@@ -30,16 +30,20 @@ NPSfunction <- function(df)
   V <- format(round(NPS*100))
   return(V)
 }
-State <- names(avg.NPS)
+
+
+
 #Pass LTR Values sorted on Sate to my Funtion which calc NPS
 avg.NPS <- tapply(df$Likelihood_Recommend_H,df$STATE_R,NPSfunction)
 avg.NPS
 
+State <- names(avg.NPS)
 newDF <- data.frame(State,avg.NPS)
 
-index<-match(State,state.abb)
-newDF[index,]
-na.omit(newDF)
+index<-match(state.abb,State)
+index <- index[!is.na(index)]
+indexnew <- index[index >0]
+newDF[indexnew,]
 cleanDF <- newDF[!is.na(newDF$State), ]
 
 library(ggmap)
